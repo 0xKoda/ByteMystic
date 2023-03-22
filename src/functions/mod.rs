@@ -38,6 +38,121 @@ pub fn functions() -> Vec<Function> {
             constant: false,
             state_mutability: ethabi::StateMutability::NonPayable,
         },
+        Function {
+            name: "transfer".to_owned(),
+            inputs: vec![
+                Param {
+                    name: "to".to_owned(),
+                    kind: ParamType::Address,
+                    internal_type: None,
+                },
+                Param {
+                    name: "value".to_owned(),
+                    kind: ParamType::Uint(256),
+                    internal_type: None,
+                },
+            ],
+            outputs: vec![Param {
+                name: "success".to_owned(),
+                kind: ParamType::Bool,
+                internal_type: None,
+            }],
+            constant: false,
+            state_mutability: ethabi::StateMutability::NonPayable,
+        },
+        Function {
+            name: "approve".to_owned(),
+            inputs: vec![
+                Param {
+                    name: "spender".to_owned(),
+                    kind: ParamType::Address,
+                    internal_type: None,
+                },
+                Param {
+                    name: "value".to_owned(),
+                    kind: ParamType::Uint(256),
+                    internal_type: None,
+                },
+            ],
+            outputs: vec![Param {
+                name: "success".to_owned(),
+                kind: ParamType::Bool,
+                internal_type: None,
+            }],
+            constant: false,
+            state_mutability: ethabi::StateMutability::NonPayable,
+        },
+        Function {
+            name: "approve".to_owned(),
+            inputs: vec![
+                Param {
+                    name: "spender".to_owned(),
+                    kind: ParamType::Address,
+                    internal_type: None,
+                },
+                Param {
+                    name: "value".to_owned(),
+                    kind: ParamType::Uint(256),
+                    internal_type: None,
+                },
+            ],
+            outputs: vec![Param {
+                name: "success".to_owned(),
+                kind: ParamType::Bool,
+                internal_type: None,
+            }],
+            constant: false,
+            state_mutability: ethabi::StateMutability::NonPayable,
+        },
+        Function {
+            name: "transferFrom".to_owned(),
+            inputs: vec![
+                Param {
+                    name: "from".to_owned(),
+                    kind: ParamType::Address,
+                    internal_type: None,
+                },
+                Param {
+                    name: "to".to_owned(),
+                    kind: ParamType::Address,
+                    internal_type: None,
+                },
+                Param {
+                    name: "tokenId".to_owned(),
+                    kind: ParamType::Uint(256),
+                    internal_type: None,
+                },
+            ],
+            outputs: vec![],
+            constant: false,
+            state_mutability: ethabi::StateMutability::NonPayable,
+        },
+        Function {
+            name: "add".to_owned(),
+            inputs: vec![
+                Param {
+                    name: "a".to_owned(),
+                    kind: ParamType::Uint(256),
+                    internal_type: None,
+                },
+                Param {
+                    name: "b".to_owned(),
+                    kind: ParamType::Uint(256),
+                    internal_type: None,
+                },
+            ],
+            outputs: vec![
+                Param {
+                    name: "sum".to_owned(),
+                    kind: ParamType::Uint(256),
+                    internal_type: None,
+                },
+            ],
+            constant: false,
+            state_mutability: ethabi::StateMutability::NonPayable,
+        },
+
+                
         // Add more functions here
     ]
 }
