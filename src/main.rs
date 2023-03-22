@@ -68,3 +68,4 @@ fn fetch_bytecode_from_arbiscan(transaction_hash: &str) -> Option<String> {
             }
         }
     }
+    
