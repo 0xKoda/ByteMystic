@@ -22,5 +22,3 @@ cargo run -- -e 0x234bf2f03473af0318fa9cea1d2f883bd9f7b861864c6c8409d81d72856bec
 
 # Why 
 This Rust CLI application is useful for developers working with Ethereum smart contracts, as it allows them to decode Solidity function calls from bytecode inputs. This can help in understanding the behavior of a contract for security purposes, debugging issues, or verifying that a contract is functioning as expected.
-
-By using the `ethabi` crate, the application can easily handle various Solidity function signatures and decode the corresponding function calls from the provided bytecode. This makes it a valuable tool for developers working with Ethereum and Solidity.

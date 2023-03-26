@@ -27,8 +27,7 @@ fn test_decode_function() {
                 }
             }
             Err(_) => {
-                // If you expect an error for a specific function, you can handle it here
-                // e.g., assert_eq!(function.name, "function_name_that_should_fail");
+                
             }
         }
     }
