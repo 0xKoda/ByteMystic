@@ -1,4 +1,3 @@
-
 use ByteMystic::decoder;
 use ByteMystic::functions;
 use ByteMystic::ethabi::{Function, Param, ParamType};
