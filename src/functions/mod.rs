@@ -21,24 +21,6 @@ pub fn functions() -> Vec<Function> {
             state_mutability: ethabi::StateMutability::NonPayable,
         },
         Function {
-            name: "exampleFunction2".to_owned(),
-            inputs: vec![
-                Param {
-                    name: "input1".to_owned(),
-                    kind: ParamType::FixedBytes(32),
-                    internal_type: None,
-                },
-                Param {
-                    name: "input2".to_owned(),
-                    kind: ParamType::Bool,
-                    internal_type: None,
-                },
-            ],
-            outputs: vec![],
-            constant: false,
-            state_mutability: ethabi::StateMutability::NonPayable,
-        },
-        Function {
             name: "transfer".to_owned(),
             inputs: vec![
                 Param {
@@ -151,8 +133,31 @@ pub fn functions() -> Vec<Function> {
             constant: false,
             state_mutability: ethabi::StateMutability::NonPayable,
         },
+        Function {
+            name: "swapandbridge".to_owned(),
+            inputs: vec![
+                Param {
+                    name: "_weth".to_owned(),
+                    kind: ParamType::Address,
+                    internal_type: None,
+                },
+                Param {
+                    name: "_oft".to_owned(),
+                    kind: ParamType::Address,
+                    internal_type: None,
+                },
+                Param {
+                    name: "_swapRouter".to_owned(),
+                    kind: ParamType::Address,
+                    internal_type: None,
+                },
+            ],
+            outputs: vec![],
+            constant: false,
+            state_mutability: ethabi::StateMutability::NonPayable,
+        },
 
                 
-        // Add more functions here
+        
     ]
 }
