@@ -1,6 +1,6 @@
 ## ByteMystic: Solidity bytecode-decoder
 
-This Rust CLI application decodes a Solidity function call from a given bytecode input or from a given tx hash on arbitrum. It uses the ethabi crate to define the function signature and decode the function call from the bytecode. The decoded function call provides information about the function name and the input parameters.
+This Rust CLI application decodes a Solidity function call from a given bytecode input or from a given tx hash on arbitrum. It uses the ethabi crate to define the function signature and decode the function call from the bytecode. The decoded function call provides information about the function name and the input parameters that can be used for static analysis.
 
 
 # Getting started.

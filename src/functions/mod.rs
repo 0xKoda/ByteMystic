@@ -156,8 +156,6 @@ pub fn functions() -> Vec<Function> {
             constant: false,
             state_mutability: ethabi::StateMutability::NonPayable,
         },
-
-                
         
     ]
 }
